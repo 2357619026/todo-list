@@ -1,9 +1,9 @@
-import express from 'express';
+import express from "express";
 const userRouter = express.Router();
 
-userRouter.get('/all', (req, res) => {
+userRouter.get("/all", (req, res) => {
 	console.log(req.headers);
-
+	// res.redirect(302, "http://localhost:3045/user/all");
 	res.send({ ok: 1 });
 });
 
